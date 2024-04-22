@@ -1,4 +1,4 @@
-# Here are step-by-step deployment instructions for running the Streamlit app locally on your machine:
+## Here are the step-by-step deployment instructions for running the Streamlit app locally on your machine:
 
 ### 1. Install Python and Streamlit
 - Make sure you have Python installed on your machine. You can download Python from the [official Python website](https://www.python.org/downloads/).
