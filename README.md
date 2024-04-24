@@ -1,44 +1,39 @@
-## Here are the step-by-step deployment instructions for running the Streamlit app locally on your machine:
+## Mobile Price Range Classifier
+![Phone Image](data/images.phot1_image.jpg)
 
-### 1. Install Python and Streamlit
-- Make sure you have Python installed on your machine. You can download Python from the [official Python website](https://www.python.org/downloads/).
-- After installing Python, install Streamlit using pip:
-  ```
-  pip install streamlit
-  ```
+### Overview
+This project aims to develop a machine learning model that can classify mobile phones into different price ranges based on their features. The dataset used contains information about various mobile phone specifications and corresponding price ranges.
 
-### 2. Clone the Streamlit App Repository
-- Clone the repository containing your Streamlit app code from a version control system like GitHub.
+### Problem Statement
+Selecting a mobile phone that aligns with one's budget and requirements can be challenging due to the wide range of options available in the market. This project addresses this challenge by building a predictive model to assist consumers in making informed decisions.
 
-### 3. Navigate to the App Directory
-- Open a terminal or command prompt and navigate to the directory where your Streamlit app code is located.
+### Dataset Description
+The dataset comprises features such as battery power, camera specifications, memory, connectivity options, etc., along with the price range of mobile phones categorized into four classes: low cost, medium cost, high cost, and very high cost.
 
-### 4. Install Required Packages
-- If your app requires additional Python packages, install them using pip:
-  ```
-  pip install -r requirements.txt
-  ```
+### Methodology
+1. **Data Exploration and Preprocessing**: Handle missing values, outliers, and inconsistencies in the dataset.
+2. **Exploratory Data Analysis (EDA)**: Gain insights into the relationships between features and the target variable.
+3. **Model Selection and Evaluation**: Choose appropriate machine learning algorithms for classification and evaluate their performance using accuracy metrics.
+4. **Model Fine-tuning**: Fine-tune the chosen model to improve its predictive accuracy.
+5. **Deployment**: Deploy the model for real-time predictions.
 
-### 5. Run the Streamlit App
-- In the terminal or command prompt, run the Streamlit app using the following command:
-  ```
-  streamlit run mobile_class_app.py
-  ```
+### Model Performance
+- **Logistic Regression (One-vs-Rest)**: Accuracy - 79.5%
+- **Logistic Regression (One-vs-One)**: Accuracy - 73.5%
+- **Logistic Regression (Multinomial)**: Accuracy - 63.25%
+- **Random Forest Classifier**: Accuracy - 89.0%
 
-### 6. Access the App in Your Web Browser
-- After running the command, Streamlit will start a local development server and provide a URL (usually http://localhost:8501) where you can access the deployed app.
-- Open a web browser and navigate to the provided URL to view and interact with the Streamlit app.
+### Conclusion and Recommendations
+The Random Forest Classifier achieved the highest accuracy among the models evaluated, making it suitable for predicting mobile phone price ranges. However, continuous monitoring and updates are recommended to ensure the model's performance remains optimal.
 
-### 7. Explore the App
-- Once the app is running in your browser, you can interact with the sidebar inputs to select different features.
-- Click the "Predict" button to trigger the prediction based on the selected features.
-- The prediction result will be displayed below the "Predict" button.
+### Deployment
+The deployed model is available [here](
+https://mobile-price-classifier-yb95mfaklhsja2tjswhgq4.streamlit.app/ent_link).
 
-### 8. Make Modifications (Optional)
-- If you want to modify the app code or add new features, you can do so by editing the Python script.
-- Save your changes and refresh the browser to see the updated app.
+### Instructions for Running Locally
+1. Clone the repository to your local machine.
+2. Install the required dependencies using `pip install -r requirements.txt`.
+3. Run the Streamlit app using `streamlit run app.py`.
+4. Access the app in your web browser at `http://localhost:8501`.
 
-### 9. Terminate the Streamlit Server
-- When you're finished exploring the app, you can terminate the Streamlit server by closing the terminal or pressing `Ctrl + C` in the terminal window where the server is running.
-
-By following these steps, you should be able to deploy and run the Streamlit app locally on your machine. If you encounter any issues, double-check the installation steps and ensure that all dependencies are correctly installed.
+For more detailed instructions, refer to the deployment section in the notebook file in the repository.
