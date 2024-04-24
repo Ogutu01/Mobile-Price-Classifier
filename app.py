@@ -10,29 +10,29 @@ with open("model.pkl", "rb") as file:
 
 # Define the Streamlit app
 def main():
-    st.title("Mobile Price-Range Classifier")
+    st.title("Mobile Price Range Classifier")
 
     # User input for mobile features
     st.sidebar.title("Feature Selection:")
 
     feature_descriptions = {
-    "battery_power": "Total energy a battery can store in mAh.",
+    "battery_power": "Total energy a battery can store in mAh (min_value = 501, max_value = 1998).",
     "blue": "Bluetooth enabled.",
-    "clock_speed": "Speed at which the microprocessor executes instructions.",
+    "clock_speed": "Speed at which the microprocessor executes instructions (min_value = 0.5, max_value = 3.0).",
     "dual_sim": "Dual SIM support ",
-    "fc": "Front Camera mega pixels.",
+    "fc": "Front Camera mega pixels (min_value = 0.0, max_value = 19).",
     "four_g": "4G network support.",
-    "int_memory": "Internal Memory (in gigabytes).",
-    "m_dep": "Mobile Depth in cm.",
-    "mobile_wt": "Weight of mobile phone.",
-    "n_cores": "Number of cores of the processor.",
-    "pc": "Primary Camera mega pixels.",
-    "px_height": "Pixel Resolution Height.",
-    "px_width": "Pixel Resolution Width.",
-    "ram": "Random Access Memory in megabytes.",
-    "sc_h": "Screen Height of mobile in cm.",
-    "sc_w": "Screen Width of mobile in cm.",
-    "talk_time": "Longest time that a single battery charge will last when talking.",
+    "int_memory": "Internal Memory in gigabytes (min_value = 2, max_value = 64).",
+    "m_dep": "Mobile Depth in cm (min_value = 0.1, max_value = 1.0).",
+    "mobile_wt": "Weight of mobile phone (min_value = 80, max_value = 200).",
+    "n_cores": "Number of cores of the processor (min_value = 1, max_value = 8).",
+    "pc": "Primary Camera mega pixels (min_value = 0, max_value = 20).",
+    "px_height": "Pixel Resolution Height (min_value = 0, max_value = 1960).",
+    "px_width": "Pixel Resolution Width (min_value = 500, max_value = 1998).",
+    "ram": "Random Access Memory in megabytes (min_value = 256, max_value = 3998).",
+    "sc_h": "Screen Height of mobile in cm (min_value = 5, max_value = 19).",
+    "sc_w": "Screen Width of mobile in cm (min_value = 0, max_value = 18).",
+    "talk_time": "Longest time that a single battery charge will last when talking (min_value = 2, max_value = 20).",
     "three_g": "3G network support.",
     "touch_screen": "Touch screen support.",
     "wifi": "Wifi connectivity."
@@ -129,6 +129,5 @@ def main():
         st.balloons()
 
 # 3. Deploy the Streamlit App
-# Deploy the Streamlit app using a hosting platform like Heroku, Streamlit Sharing, or any other platform of your choice.
 if __name__ == "__main__":
     main()
