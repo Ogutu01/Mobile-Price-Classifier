@@ -1,5 +1,5 @@
-## Mobile Price Range Classifier
-![Phone Image](data/images/phot1_image.jpg)
+# Mobile Price Range Classifier
+![Phone Image](data/images/phone1_image.jpg)
 
 ### 1. Overview
 This project aims to develop a machine learning model that can classify mobile phones into different price ranges based on their features. The dataset used contains information about various mobile phone specifications and corresponding price ranges. Selecting a mobile phone that aligns with one's budget and requirements can be challenging due to the wide range of options available in the market. This project addresses this challenge by building a predictive model to assist consumers in making informed decisions.
@@ -18,8 +18,7 @@ The dataset comprises features such as battery power, camera specifications, mem
 The Random Forest Classifier achieved the highest accuracy among the models evaluated, making it suitable for predicting mobile phone price ranges. However, continuous monitoring and updates are recommended to ensure the model's performance remains optimal.
 
 ### 5. Deployment
-The deployed model is available [here](
-https://mobile-price-classifier-yb95mfaklhsja2tjswhgq4.streamlit.app/ent_link).
+The deployed model is available [here](https://mobile-price-classifier-yb95mfaklhsja2tjswhgq4.streamlit.app/ent_link).
 
 ### 6. Instructions for Running Locally
 1. Clone the repository to your local machine.
