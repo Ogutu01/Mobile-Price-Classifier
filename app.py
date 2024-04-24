@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import os
 
 # Load the pickled model
 with open("model.pkl", "rb") as file:
@@ -11,6 +12,12 @@ with open("model.pkl", "rb") as file:
 # Define the Streamlit app
 def main():
     st.title("Mobile Price Range Classifier")
+
+    # Define the image path
+    image_path = os.path.join("data", "images", "phone1_image.jpg")
+
+    # Add picture of phone display
+    st.image(image_path, caption = "Image source: Google", use_column_width = True)
 
     # User input for mobile features
     st.sidebar.title("Feature Selection:")
