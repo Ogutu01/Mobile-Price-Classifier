@@ -1,5 +1,4 @@
 
-# 📱 Mobile Price Classifier
 # Mobile Price Range Classifier
 ![Phone Image](data/images/phone1_image.jpg)
 
