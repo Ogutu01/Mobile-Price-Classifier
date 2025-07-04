@@ -48,7 +48,7 @@ def main():
     categorical_mapping = {1 : "Yes", 0 : "No"}
 
 
-    # Add Streamlit components for user input with feature descriptions
+    # Add Streamlit components for user input with the feature descriptions as well
     battery_power = st.sidebar.number_input("Battery Power (mAh)", min_value=501, max_value=1998, help=feature_descriptions.get("battery_power", ""))
     
     blue = st.sidebar.radio("Bluetooth Availability", list(categorical_mapping.values()), help=feature_descriptions.get("blue", ""))
