@@ -112,11 +112,6 @@ Mobile-Price-Classifier/
     └──train.csv
 ├── notebooks/
 │   └── index.ipynb
-├── src/
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── predict.py
 ├── model.pkl
 ├── requirements.txt
 └── GEN_AI(Updated)_README.md
