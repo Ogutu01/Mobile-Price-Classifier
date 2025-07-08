@@ -4,7 +4,10 @@
 
 ## Description
 
-Predicts the price range of mobile phones based on hardware specifications using machine learning.
+# Deployment Link
+[TRYYYY MEEEE!](https://mobile-price-classifier-yb95mfaklhsja2tjswhgq4.streamlit.app/)
+
+The above referenced project predicts the price range of mobile phones based on hardware specifications using machine learning.
 
 This project takes input features like RAM, battery life, camera specs, screen, and connectivity attributes to build models that classify mobiles into one of four price categories:
 - **0** – low cost  
@@ -16,10 +19,10 @@ This project takes input features like RAM, battery life, camera specs, screen, 
 
 ## 🚀 Features
 
-- ✅ Supports multiple ML algorithms: Logistic Regression, KNN, SVM, Decision Trees, Random Forest  
-- ✅ Includes EDA, preprocessing, and feature engineering  
-- ✅ Generates model evaluation reports: accuracy, confusion matrix, classification report  
-- ✅ Saves the best-performing model for reuse/prediction  
+- Supports multiple ML algorithms: Logistic Regression, KNN, SVM, Decision Trees, Random Forest  
+- Includes EDA, preprocessing, and feature engineering  
+- Generates model evaluation reports: accuracy, confusion matrix, classification report  
+- Saves the best-performing model for reuse/prediction  
 
 ---
 
@@ -147,5 +150,5 @@ This project is open-source and distributed under the **MIT License**. See the [
 
 ## 🙋 Support & Contact
 
-Got questions or found a bug? Please open an [issue](https://github.com/Ogutu01/Mobile-Price-Classifier/issues) or contact via email.
+If you've got any questions or found a bug, please open an [issue](https://github.com/Ogutu01/Mobile-Price-Classifier/issues) or contact via email.
 ```
