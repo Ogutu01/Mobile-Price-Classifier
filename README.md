@@ -2,10 +2,11 @@
 # Mobile Price Range Classifier
 ![Phone Image](data/images/phone1_image.jpg)
 
-## Description
 
-# Deployment Link
+#### Deployment Link
 [TRYYYY MEEEE!](https://mobile-price-classifier-yb95mfaklhsja2tjswhgq4.streamlit.app/)
+
+## Description
 
 The above referenced project predicts the price range of mobile phones based on hardware specifications using machine learning.
 
